@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="sabor.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>PASTELASTRO</title>
+</head>
+<body>
+	<nav>
+            <label  ><a href="#" class="lgm"> <strong>PASTELSATRO</a> </strong> </label>
+            <ul class="um"> 
+                <li class="lm">  <a class="am" href="index.html">  INICIO </a> </li>
+                <li class="lm">  <a class="am" href="sabores.html">  PASTELES </a> </li>
+                <li class="lm">  <a class="am" href="adornos.html">  ADORNOS </a> </li>
+                <li class="lm">  <a class="am" href="pedidos.html">  PEDIDOS </a> </li>
+            </ul>
+        </nav>
+    <div align="center"> <img class="imagen-logo" src="../imagen/logo.png" alt=""
+            border="0"></div>
+
+    <h1 align=center>Pedido de Pastel</h1>
+    <form action="/accion.js" id="form1" method="post">
+        <div align="center">
+            <label for="Input1"> Nombre Completo</label><br>
+            <input type="text" placeholder="Ingresa tu nombre" id="Input1" name="Input1"><br><br>
+
+            <label for="correo1">Correo electronico</label><br>
+            <input type="email" placeholder="Ejemplo@hotmail.com" id="correo1" name="correo1"><br><br>
+
+            <label for="tel1">Numero de telefono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="tel1" name="tel1" maxlength="10"><br><br>
+
+            <label for="numero1">cantidad pastele</label><br>
+            <input type="number" placeholder="Cantidad" id="numero1" name="numero1"><br><br>
+
+            <label for="fecha1">Fecha a entregar</label><br>
+            <input type="date" id="fecha1" name="fecha1"><br>
+
+            <label for="Sabor">Sabor</label><br>
+            <select id="Sabor" name="Sabor">
+                <option value="Chocolate">pastel de chocolate</option>
+                <option value="Vainilla">pastel de boda</option>
+                <option value="Cajeta">pastel de moca </option>
+                <option value="Red Velvet">pastel de capas</option>
+                <option value="Red Velvet">pastel de fresas con chocolate</option>
+                <option value="Red Velvet">pastel de 3 leches </option>
+            </select><br><br>
+
+            <label for="decoracion">Decoración</label><br>
+            <select id="decoracion" name="decoracion">
+                <option value="Ninguno"> Ninguna</option>
+                <option value="Fondant">chispas de chocolate</option>
+                <option value="Sprinkles">chispas</option>
+                <option value="Chispas de chocolate">frutas</option>
+                <option value="Buttercream">mensaje en pastel</option>
+            </select><br><br>
+
+            <label for="Input2"> ingresa tu dirección</label><br>
+            <input type="text" placeholder="Calle y numero" id="Input2" name="Input2"><br><br>
+            <input type="button" id="boton1" name="boton1" value="Enviar pedido"
+                onclick="alert('Se ha enviado el pedido');"><br><br>
+            <input type="reset"><br>
+    </form>
+    </div>
+
+        
+
+</body>
+</html>

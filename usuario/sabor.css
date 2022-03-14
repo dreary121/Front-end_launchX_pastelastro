@@ -1,0 +1,39 @@
+
+h1 {
+            font-family: Lobster, monospace;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+
+        .subtitulos {
+            font-size: 22px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .borde-imagen {
+            border-color: lightblue;
+            border-width: 5px;
+            border-style: solid;
+            border-radius: 10px;
+        }
+
+        .tamaño-imagen {
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+        .imagen-menu {
+            width: 150px;
+            height: 150px;
+            border-color: pink;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 10px;
+        }

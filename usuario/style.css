@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: #262626;
+    color: white;
+}
+
+div{
+    padding: 50px;
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: 'Encode Sans SC', sans-serif;
+    height: 80px;
+    background-color: #262626;
+}
+
+
+ label .lgm{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav .um{
+    float: right;
+    margin-right: 20px;
+    color: #ffffff;
+    
+}
+
+nav .um .lm{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+nav .um .lm .am{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.am:hover{
+    background: #343434;
+    transition: all .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width:952){
+    label .lgm{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav .um .lm .am{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    .um{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:  #262626;
+        top: 80px;
+        left: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav .um .lm{
+        display: block;
+        margin: 70px 0;
+        line-height: 40px;
+    }
+    nav .um .lm .am{
+        font-size: 20px;
+    }
+    .am:hover{
+        background: none;
+        color: #343434;
+    }
+    #check:checked ~ .um{
+        left: 0;
+    }
+}
+
+
+/*box*/
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1{
+    font-size: 72px;
+    letter-spacing: 0.2em;
+}
+
+.container h1 span{
+    border: 10px solid white;
+    padding: 6px 14px;
+    display: inline-block;
+}
